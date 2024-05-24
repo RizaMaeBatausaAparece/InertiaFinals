@@ -55,6 +55,7 @@ const props = defineProps({
     padding: 20px;
     margin: auto; /* Center the container */
     width: 900px;
+    background-color: goldenrod;
 }
 
 .popular-cards {
