@@ -73,7 +73,6 @@ const getCardStyle = (movie) => {
     margin: auto;
     width: 900px;
     background-color: goldenrod;
-    color: white;
 }
 
 .movies-cards {
