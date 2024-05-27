@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Laptop extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title', 'director', 'rating', 'image_url'
+        'brand_name', 'model', 'price'
     ];
 }

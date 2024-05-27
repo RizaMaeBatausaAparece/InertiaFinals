@@ -1,18 +1,17 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\Popular;
+use App\Models\Employee;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class PopularSeeder extends Seeder
+class EmployeeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Popular::factory(10)->create();
-
+        Employee::factory()->count(50)->create();
     }
 }

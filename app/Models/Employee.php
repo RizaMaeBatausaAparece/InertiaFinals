@@ -4,18 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Course;
-use App\Models\Subject;
 
-class Student extends Model
+class Employee extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'id_num',
-        'name',
-        'course',
-        'year',
-        'subject'
+        'first_name',
+        'last_name',
+        'phone_number',
+        'salary',
+        'department_id',
     ];
 }

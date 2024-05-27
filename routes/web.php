@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\MovieController;
-use App\Http\Controllers\PopularController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\DepartmentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -41,14 +41,15 @@ Route::middleware('auth')->group(function () {
         return Inertia('Home');
     });
 
-    Route::get('/movies', [MovieController::class, 'index']);
-    Route::get('/popular', [PopularController::class, 'index']);
+    Route::get('/employees', [EmployeeController::class, 'index']);
+    Route::get('/departments', [DepartmentController::class, 'index']);
 
-    Route::resource('movies', MovieController::class);
-    Route::post('/movies', [MovieController::class, 'store']);
-    Route::get('/movies/{movies}', [MovieController::class, 'show']);
-    Route::put('/movie/{movies}', [MovieController::class, 'update']);
-    Route::delete('/movie/{movie}', [MovieController::class, 'destroy']);
+    Route::post('/employees', [EmployeeController::class, 'store']);
+    Route::resource('employees', EmployeeController::class);
+
+    Route::get('/employees/{employee}', [EmployeeController::class, 'show'])->name('employees.show');
+    Route::put('/employees/{employee}', [EmployeeController::class, 'update'])->name('employees.update');
+    Route::delete('/employees/{employee}', [EmployeeController::class, 'destroy']);
 
 });
 

@@ -5,7 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Popular extends Model
+class Cellphone extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'brand_name', 'price', 'released'
+    ];
 }

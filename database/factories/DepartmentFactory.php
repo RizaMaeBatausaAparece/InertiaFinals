@@ -1,13 +1,14 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\Employee;
+use App\Models\Department;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Movie>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Department>
  */
-class MovieFactory extends Factory
+class DepartmentFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,9 +18,8 @@ class MovieFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->sentence,
-            'director' => $this->faker->name,
-            'rating' => $this->faker->numberBetween(1, 10),
+            'department_name' => $this->faker->company,
+            'location' => $this->faker->city,
         ];
     }
 }

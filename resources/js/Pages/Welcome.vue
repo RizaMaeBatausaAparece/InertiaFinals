@@ -22,16 +22,17 @@ defineProps({
 <template>
     <Head title="Welcome" />
     <div class="home">
-        <div class="routes">
-            <Link v-if="canRegister" :href="route('register')" class="route-link">Sign up</Link>
-        </div>
         <div class="content">
-            <img src="https://cdn.dribbble.com/users/172091/screenshots/5318042/lightfilms_logo.gif" alt="">
-            <p class="text-center text-4xl font-bold text-white mb-5">Welcome to our Movie List!</p>
-            <p class="text-center text-xl font-bold text-white mt-2">Here is where you can watch movies anytime</p>
-            <p class="text-center text-xl font-bold text-white mt-2">So don't miss out!</p>
-            <p class="text-center text-xl font-bold text-blue-600 mt-5 mb-5">Explore now!</p>
+            <img src="https://usagif.com/wp-content/uploads/2021/4fh5wi/welcome-15.gif" alt="">
+            <p class="text-center text-4xl font-bold text-black mb-5">Welcome Employees!</p>
+            <p class="text-center text-xl font-bold text-white mt-2">You want to gain more money?</p>
+            <p class="text-center text-xl font-bold text-white mt-2">Try our Company</p>
+            <p class="text-center text-xl font-bold text-white mt-2">Here in our Company we are all Family</p>
+            <p class="text-center text-xl font-bold text-white-600 mt-5 mb-5">Apply now!</p>
+            <div class="routes">
+            <Link v-if="canRegister" :href="route('register')" class="route-link">Sign up</Link>
             <Link :href="route('login')" class="route-link2">Log in</Link>
+            </div>
         </div>
     </div>
 
@@ -39,8 +40,10 @@ defineProps({
 
 <style>
 .home {
-    background-color: rgb(53, 53, 53);
     height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/549/541/original/technology-network-background-for-business-and-online-marketing-vector-illustration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 img {
     margin-left: 35%;
@@ -53,7 +56,7 @@ img {
 .routes {
     margin-bottom: 20px;
     padding: 15px;
-    margin-left: 80%;
+    margin-left: 600px;
 }
 
 .route-link {
@@ -84,7 +87,7 @@ img {
     background-color: #4a90e2;
     color: #fff;
     text-decoration: none;
-    margin-left: 47%;
+    margin-left: 10%;
 }
 
 .route-link2:hover {

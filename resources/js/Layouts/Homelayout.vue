@@ -8,14 +8,16 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 
 <template>
     <div class="flex">
-        <div class="navbar w-[200px] bg-green-800 text-white">
-            <img src="https://cdn.dribbble.com/users/2264632/screenshots/6708631/final.gif" alt="Profile Image">
+        <div class="navbar w-[200px] bg-blue-800 text-white">
+            <img src="https://i.pinimg.com/originals/9b/bc/7b/9bbc7b93a454e53b5f88f3c22d21240d.gif" alt="Profile Image">
             <nav class="item-center">
-                <h1 class="text-center text-2xl">Movie List</h1>
-                <p class="text-center mt-5">Category</p>
+                <h1 class="text-center text-2xl">Nova Company</h1>
+                <p class="text-center mt-5">Explore</p>
                 <Link href="/home" class="about bg-black py-2 px-5 text-center rounded mt-3">Home</Link>
-                <Link href="/movies" class="about bg-black py-2 px-5 text-center rounded">Movies</Link>
-                <Link href="/popular" class="about bg-black py-2 px-5 text-center rounded">Popular Movies</Link>
+                <Link href="/employees" class="about bg-black py-2 px-5 text-center rounded">Employees</Link>
+                <Link href="/departments" class="about bg-black py-2 px-5 text-center rounded">Departments</Link>
+                <Link href="/overview" class="about bg-black py-2 px-5 text-center rounded">Overview</Link>
+
             </nav>
         </div>
         <div class="content flex-grow">
